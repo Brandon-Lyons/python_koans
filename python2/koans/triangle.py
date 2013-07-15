@@ -18,8 +18,16 @@
 #   about_triangle_project_2.py
 #
 def triangle(a, b, c):
-    # DELETE 'PASS' AND WRITE THIS CODE
-    pass
+    lengths = sorted([a, b, c])
+    a = lengths[0]
+    b = lengths[1]
+    c = lengths[2]
+    if a == c:
+    	return 'equilateral'
+    elif a == b or b == c:
+    	return 'isosceles'
+    else:
+    	return 'scalene'
 
 
 # Error class used in part 2.  No need to change this code.
